@@ -552,6 +552,7 @@ section h3.section-subheading {
 }
 aside.clients img {
   margin: 50px auto;
+  height: 100px;
 }
 section#contact {
   background-color: #222222;
@@ -743,4 +744,11 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #cf1919;
+}
+.buttons {
+  text-align: center;
+  margin: 50px;
+}
+img.me {
+  height: 200px;
 }
