@@ -609,6 +609,9 @@ section#contact :-ms-input-placeholder {
 section#contact .text-danger {
   color: #e74c3c;
 }
+section#about img {
+  margin-bottom: 50px
+}
 footer {
   padding: 25px 0;
   text-align: center;
@@ -667,7 +670,7 @@ ul.social-buttons li a:active {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;

@@ -148,7 +148,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/arcticbrowning.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/trends-preview.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Arctic Browning</h4>
@@ -179,7 +179,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Check out my<a href="https://cfusting.files.wordpress.com/2017/05/resumev-06.pdf" target="_blank"> resume</a>.</h3>
+                    <h3 class="section-subheading text-muted">For detailed qualifications view my<a href="https://cfusting.files.wordpress.com/2017/05/resumev-06.pdf" target="_blank"> resume</a>.</h3>
                 </div>
             </div>
             <div class="row">
@@ -188,6 +188,15 @@
                   <img src="img/about/me.jpg" class="me img-responsive img-centered" alt="Chris Fusting">
                 </div>
                 <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <p class="text-muted">
+                I enjoy helping people understand what cuttiing edge machine learning and technology can do for them. When you hire me as a contractor or consultant your're not just hiring a pair of extra hands, you're hiring a strategic thinker who's looking out for your interests. I work under and agile methodology which means transparent planning, communication, and timelines are my status quo.
+                </p>
+              </div>
+              <div class="col-md-3"></div>
             </div>
             <div class="buttons">
             <div class="row">
@@ -279,7 +288,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Skill Clusters</h2>
-                                <p class="item-intro text-muted">Natural Language</p>
+                                <p class="item-intro text-muted">Discovering emerging skill-sets in the gig economy.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/skillsegments-free.jpg" alt="">
                                 <p>Project description.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -306,9 +315,39 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Arctic Browning</h2>
-                                <p class="item-intro text-muted">Multispectral Satellite</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/arcticbrowning-orig.png" alt="">
-                                <p>Project Description</p>
+                                <p class="item-intro text-muted">After years of increased vegetative growth, why are we observing death?</p>
+                                <p>
+                                The 2015 Arctic Report Card <a href="#lc-1">[1]</a> showed an unusual downward trend in the Normalized Vegetation Index (NDVI) in the arctic circle and the northern reaches of Eurasia. NDVI is a measure of the earth's greenness and is thus a proxy for vegetative growth and primary productively. The cause of the recent downward trend is not know, although isolated field studies suggests extreme temperature and other events have had a significant impact <a href="#lc-2">[2]</a>. This is in contrast to the previous 30 years where an upward trend in vegetative growth has been observed. The plot below shows the aggregate trends over the arctic, North America, and Eurasia.
+                                </p>
+                                <img class="img-responsive img-centered" src="https://cfusting.github.io/img/portfolio/arctic-trends.png" alt="Arctic plot">
+                                <p>
+                                On the left is the Max NDVI where the value represented is the maximum of the season. On the right is the Time Integrated NDVI (TI-NDVI) where the value represented is the sum of the NDVI over the growing season. TI-NDVI is a better indicator of overall vegetative growth as it takes the entire season into account and not just the maximum values.
+                                </p>
+                                <h3>Methods</h3>
+                                <p>
+                                Data in the Arctic Circle is difficult to come by. However NASA launched two satellites (Aqua and Terra) around the turn of the century that provide daily coverage of the entire earth. From these satellites we can derive NDVI, Land Surface Temperature (LST), and Snow Cover. We will use LST and Snow Cover to predict TI-NDVI (the sum of the NDVI over the growing season discussed previously). What we're hoping to find is some link between the LST and snow cover and the amount of vegetation growth (TI-NDVI) that was observed.
+                                </p>
+                                <p>
+                                <p class="text-muted">
+                                Example: When temperature rises in mid winter the snow melts and exposed delicate shrubs. If it then drops the shrubs that were previously protected by the snow now die due due to exposure. When summer comes the dead shrubs fail to produce new leaves and thus raise the value of TI-NDVI. Because temperature had to rise and then fall for this event to occur, we call it "non-linear".
+                                </p>
+                                We hypothesize that the relationship between LST, snow cover, and TI-NDVI is non linear (as illustrated in the example). Although there are many methods in machine learning that can capture non-linear relationships, we will use <a href="https://en.wikipedia.org/wiki/Symbolic_regression">Symbolic Regression</a>, an <a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm">evolutionary algorithm</a>. Symbolic Regression is particularly good at finding non-linear interactions between variables, in our case LST and snow cover. In addition the results are delivered as a mathematical equation which climate scientists can easily interpret. This is in contrast to other non-linear machine learning methods such as <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Neural Networks</a> which although excellent at building non-linear models, can be difficult to interpret.
+                                </p>
+                                <h3>Results</h3>
+                                <p>
+                                This research is currently in progress.
+                                </p>
+                                <p>
+                                <h3>Literature Cited</h3>
+                                <ol>
+                                   <li id="lc-1">Greenness 15. Arctic Program Available at: http://arctic.noaa.gov/Report-Card/Report-Card-2015/ArtMID/5037/ArticleID/221/Tundra-Greenness. (Accessed: 25th January 2017)</li>
+                                  <li id="lc-2">Bjerke, J. W. et al. Record-low primary productivity and high plant damage in the Nordic Arctic Region in 2012 caused by multiple weather events and pest outbreaks. Environ. Res. Lett. 9, 84006 (2014).</li>
+                                </ol>
+                                <ul class="list-inline social-buttons buttons">
+                                  <li>
+                                    <a href="https://github.com/cfusting/arctic-browning" target="_blank"><i class="fa fa-github-alt"></i></a>
+                                  </li>
+                                </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -334,9 +373,21 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Crop Yield Prediction</h2>
-                                <p class="item-intro text-muted">Passive Microwave Satellite</p>
+                                <p class="item-intro text-muted">Understanding the risk of growing corn, soybeans, and wheat around the world.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/corn-free.png" alt="">
-                                <p>Project Description</p>
+                                <h3>Business Goals</h3>
+                                <p>
+                                  Weather Predict Consulting was interested in providing global crop yield forecasting and related risk analysis products. These products needed to update in near real-time. The goal was to create a reliable system that could make as accurate crop yield predictions as possible.                                 
+                                </p>
+                                <h3>Solution</h3>
+                                <p>
+                                  I created a full-stack system to ingest crop yield and satellite data, perform data validation and error checking, and automate the modeling process. The system automated data ingestion, modeling, and reporting. I researched additionally statistical methods and data sources to enhance the accuracy and robustness of the models. Although the details of this work are proprietary, some of the challenges I faced and overcame include:
+                                  <ul>
+                                    <li>Bad quality and missing crop yield data in many reagions.</li>
+                                    <li>Limited training data for high impact events.</li>
+                                    <li>Non-linearity of crop growth.</li>
+                                  </ul>
+                                </p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
