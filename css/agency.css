@@ -609,6 +609,9 @@ section#contact :-ms-input-placeholder {
 section#contact .text-danger {
   color: #e74c3c;
 }
+section#about {
+  text-align: center
+}
 section#about img {
   margin-bottom: 50px
 }
