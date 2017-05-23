@@ -305,8 +305,79 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Skill Clusters</h2>
                                 <p class="item-intro text-muted">Discovering emerging skill-sets in the gig economy.</p>
+                                <h3>Goals</h3>
+                                <p>
+                                <a href="https://aquent.com">Aquent</a> is a temporary staffing company that finds people contractual work in creative roles such as Graphic Design, Copyediting, Illustrating, etc. Aquent acts as a freelancer's agent, connecting qualified people with meaningful work. Many people spend large portions of their careers with Aquent as they enjoy the variety of projects and companies that comes with freelancing without having to worry about finding the work themselves. 
+                                </p>
+                                <p>
+                                    Aquent makes money off every order (contractual position) they staff and thus has a vested interest in staffing as many orders as the sales team has found. Finding the right talent (temporary worker) for an order can be tricky and depends on the client's location, culture, experience, and other qualifications. 
+                                </p>
+                                <p>
+                                At the core of a talent's qualifications is her skill set. Aquent realized this and created a free online training program called <a href="https://thegymnasium.com/">Gymnasium</a> to help talent (or anyone) build their skills sets for free. Identifying emerging skill sets is thus a goal of Aquent as it allows them to tailor courses today relevant to tomorrow's orders. Thus there are two primary goals:
+                                </p>
+                                <ol>
+                                    <li>Discover what skill sets that are emerging in new orders.</li>
+                                    <li>Determine if the talent base has these skill sets and if not ramp up recruiting and training efforts in these areas.</li>
+                                </ol>
+                                <h3>Solution</h3>
+                                <p>
+                                When Aquent tries to fill an order various talent become associated with it and reach different levels of candidacy. If a talent is interviewed by the client that placed the order, it is very likely they have the core skill set necessary for the job. The skills of each talent (derived from their profile) who interviewed for an order are grouped together and the clustering algorithm <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation</a> (LDA) is used to discover latent clusters of skills (which we will simply call skill sets).
+                                </p>
                                 <img class="img-responsive img-centered" src="img/portfolio/skillsegments-free.jpg" alt="">
-                                <p>Project description pending client review for proprietary information. Check back later!</p>
+                                <p>
+                                The skill sets provide a clear view of what skills occur together on orders. The following are two examples of actual skill sets found in this work:
+                                </p>
+                                <div class="row">
+                                  <div class="col-md-3"></div>
+                                  <div class="col-md-6">
+                                <div class="table-responsive">
+                                  <table class="table table-bordered table-striped table-condensed">
+                                    <tr>
+                                      <td>Skill Set 1</td>
+                                      <td>Skill Set 2</td>
+                                    </tr>
+                                    <tr>
+                                      <td>html</td>
+                                      <td>graphic_design</td>
+                                    </tr>
+                                    <tr>
+                                      <td>css</td>
+                                      <td>illustrator</td>
+                                    </tr>
+                                    <tr>
+                                      <td>javascript</td>
+                                      <td>adobe_creative_suite</td>
+                                    </tr>
+                                    <tr>
+                                      <td>php</td>
+                                      <td>indesign</td>
+                                    </tr>
+                                    <tr>
+                                      <td>web_design</td>
+                                      <td>photoshop</td>
+                                    </tr>
+                                    <tr>
+                                      <td>...</td>
+                                      <td>...</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-md-3"></div>
+                            </div>
+                                <p>
+                                  Skill set 1 is a web designer and skill set 2 is a more traditional graphic designer. 
+                                </p>
+                                <h3>Action</h3>
+                                <p>
+                                  Using the skill sets discovered it is now possible to:
+                                </p>
+                                <ol>
+                                    <li>Discover emerging skill sets in new orders.</li>
+                                    <li>Quantify exactly how often these skill sets are in demand.</li>
+                                    <li>Determine how much of the talent base has these skill sets.</li>
+                                    <li>Ramp up recruiting and training efforts as necessary.</li>
+                                </ol>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>

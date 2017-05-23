@@ -758,3 +758,6 @@ body {
 img.me {
   height: 400px;
 }
+.table td {
+  text-align: center;   
+}
