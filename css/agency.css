@@ -295,7 +295,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 .service-heading {
@@ -549,6 +549,9 @@ section h3.section-subheading {
 }
 .team-member p {
   margin-top: 0;
+}
+aside.clients {
+  padding: 50px;
 }
 aside.clients img {
   margin: 50px auto;
