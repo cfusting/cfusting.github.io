@@ -380,11 +380,11 @@
                                 </p>
                                 <ol>
                                     <li>Discover what skill sets are emerging in new orders.</li>
-                                    <li>Determine if the talent base has these skill sets and if not ramp up recruiting and training efforts in these areas.</li>
+                                    <li>Determine if the talent base has these skill sets and if not, ramp up recruiting and training efforts in these areas.</li>
                                 </ol>
                                 <h3>Solution</h3>
                                 <p>
-                                When Aquent tries to fill an order various talent become associated with it and reach different levels of candidacy. If a talent is interviewed by the client that placed the order, it is very likely they have the core skill set necessary for the job. The skills of each talent (derived from their profile) who interviewed for an order are grouped together and the clustering algorithm <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation</a> (LDA) is used to discover latent clusters of skills (which we will simply call skill sets).
+                                When Aquent begins the process of filling and order, various talent become associated with it and reach different levels of candidacy. If a talent is interviewed for the position, it is very likely they have the core skill set necessary for the job. The skill set of each talent (derived from their profile) who interviewed for an order are grouped together and the clustering algorithm <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation</a> (LDA) is used to discover latent clusters of skills (which we will simply call skill sets).
                                 </p>
                                 <img class="img-responsive img-centered" src="img/portfolio/skillsegments-free.jpg" alt="">
                                 <p>
@@ -450,6 +450,7 @@
         </div>
     </div>
 
+
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -467,7 +468,7 @@
                                 <h2>Arctic Browning</h2>
                                 <p class="item-intro text-muted">After years of increased vegetative growth, why are we observing death?</p>
                                 <p>
-                                The 2015 Arctic Report Card <a href="#lc-1">[1]</a> showed an unusual downward trend in the Normalized Vegetation Index (NDVI) in the arctic circle and the northern reaches of Eurasia. NDVI is a measure of the earth's greenness and is thus a proxy for vegetative growth and primary productively. The cause of the recent downward trend is not know, although isolated field studies suggests extreme temperature and other events have had a significant impact <a href="#lc-2">[2]</a>. This is in contrast to the previous 30 years where an upward trend in vegetative growth has been observed. The plot below shows the aggregate trends over the arctic, North America, and Eurasia.
+                                The 2015 Arctic Report Card <a href="#lc-1">[1]</a> showed an unusual downward trend in the Normalized Vegetation Index (NDVI) in the arctic circle and the northern reaches of Eurasia. NDVI is a measure of the earth's greenness, acting as a proxy for vegetative growth and primary productively. The cause of the recent browning trend is not known, although isolated field studies suggest extreme temperature and other events have had a significant impact <a href="#lc-2">[2]</a>. This is in contrast to the previous 30 years where an upward trend in vegetative growth and greenness has been observed. The plot below shows the aggregate trends over the Arctic, North America, and Eurasia.
                                 </p>
                                 <img class="img-responsive img-centered" src="https://cfusting.github.io/img/portfolio/arctic-trends.png" alt="Arctic plot">
                                 <p>
@@ -475,13 +476,13 @@
                                 </p>
                                 <h3>Methods</h3>
                                 <p>
-                                Data in the Arctic Circle is difficult to come by. However NASA launched two satellites (Aqua and Terra) around the turn of the century that provide daily coverage of the entire earth. From these satellites we can derive NDVI, Land Surface Temperature (LST), and Snow Cover. We will use LST and Snow Cover to predict TI-NDVI (the sum of the NDVI over the growing season discussed previously). What we're hoping to find is some link between the LST and snow cover and the amount of vegetation growth (TI-NDVI) that was observed.
+                                Data for the Arctic Circle is difficult to come by. However NASA launched two satellites (Aqua and Terra) around the turn of the century that provide daily coverage of the entire earth. From these satellites we can derive NDVI, Land Surface Temperature (LST), and Snow Cover. We will use LST and Snow Cover to predict TI-NDVI. We hope to find connections between the LST and Snow cover and the amount of vegetation growth (TI-NDVI) that was observed.
                                 </p>
                                 <p>
                                 <p class="text-muted">
-                                Example: When temperature rises in mid winter the snow melts and exposed delicate shrubs. If it then drops the shrubs that were previously protected by the snow now die due due to exposure. When summer comes the dead shrubs fail to produce new leaves and thus raise the value of TI-NDVI. Because temperature had to rise and then fall for this event to occur, we call it "non-linear".
+                                Example: When temperature rises in mid winter, the snow melts and expose delicate shrubs. If the temperature then drops, the shrubs that were previously protected by the snow now die due due to exposure. When summer comes the dead shrubs fail to produce new leaves, which lowers the value of TI-NDVI. Because temperature had to rise and then fall for this event to occur, we call it "nonlinear".
                                 </p>
-                                We hypothesize that the relationship between LST, snow cover, and TI-NDVI is non linear (as illustrated in the example). Although there are many methods in machine learning that can capture non-linear relationships, we will use <a href="https://en.wikipedia.org/wiki/Symbolic_regression">Symbolic Regression</a>, an <a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm">evolutionary algorithm</a>. Symbolic Regression is particularly good at finding non-linear interactions between variables, in our case LST and snow cover. In addition the results are delivered as a mathematical equation which climate scientists can easily interpret. This is in contrast to other non-linear machine learning methods such as <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Neural Networks</a> which although excellent at building non-linear models, can be difficult to interpret.
+                                We hypothesize that the relationship between LST, Snow Cover, and TI-NDVI is nonlinear (as illustrated in the example). Although there are many methods in machine learning that can capture nonlinear relationships, we will use <a href="https://en.wikipedia.org/wiki/Symbolic_regression">Symbolic Regression</a>, an <a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm">evolutionary algorithm</a>. Symbolic Regression is particularly good at finding nonlinear interactions between variables, in our case LST and snow cover. In addition the results are delivered as a mathematical equation which climate scientists can easily interpret. This is in contrast to other nonlinear machine learning methods such as <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Neural Networks</a> which although excellent at building nonlinear models, can be difficult to interpret.
                                 </p>
                                 <h3>Results</h3>
                                 <p>
@@ -533,92 +534,6 @@
                                     <li>Non-linearity of crop growth.</li>
                                   </ul>
                                 </p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Roan Mountain Vegetation</h2>
-                                <p class="item-intro text-muted">Lidar</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roan-orig.png" alt="">
-                                <p>Project Description.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
